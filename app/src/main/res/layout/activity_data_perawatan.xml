@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dataperawatan"
+        android:layout_marginTop="0sp"
+        android:layout_marginLeft="20sp"
+        android:id="@+id/dataPerawatan"/>
+
+    <LinearLayout
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/dataPerawatan"
+        android:layout_marginLeft="20sp"
+        android:layout_marginStart="20sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jenis Pupuk:"
+                android:textColor="@color/sawit"
+                />
+
+            <Spinner
+                android:id="@+id/jenisPupuk"
+                android:layout_width="200dp"
+                android:layout_height="40sp"
+                android:layout_marginLeft="20sp"
+                android:background="@drawable/chocolate_outline"
+                android:spinnerMode="dropdown"
+
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dosis Pupuk:"
+                android:textColor="@color/sawit"
+
+                />
+
+            <EditText
+                android:layout_width="198dp"
+                android:layout_height="40sp"
+                android:layout_marginLeft="20sp"
+                android:background="@drawable/chocolate_outline"
+                android:hint="Masukan jumlah dosis pupuk"
+                android:textColorHint="@color/sawit"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Penyakit Hama:"
+                android:textColor="@color/sawit"
+                />
+
+            <Spinner
+                android:id="@+id/penyakitHama"
+                android:layout_width="181dp"
+                android:layout_height="40sp"
+                android:layout_marginLeft="20sp"
+                android:background="@drawable/chocolate_outline"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Metode Pengendalian:"
+                android:textColor="@color/sawit"
+                />
+
+            <Spinner
+                android:id="@+id/metodePengendalian"
+                android:layout_width="140dp"
+                android:layout_height="40sp"
+                android:layout_marginLeft="20sp"
+                android:background="@drawable/chocolate_outline"
+                android:spinnerMode="dropdown" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jenis Pemangkasan:"
+                android:textColor="@color/sawit"
+                />
+
+            <Spinner
+                android:id="@+id/jenisPemangkasan"
+                android:layout_width="150dp"
+                android:layout_height="40sp"
+                android:layout_marginLeft="20sp"
+                android:background="@drawable/chocolate_outline"
+                android:spinnerMode="dropdown" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jumlah Air yang digunakan:"
+                android:textColor="@color/sawit"
+                />
+
+            <Spinner
+                android:id="@+id/jumlahAir"
+                android:layout_width="107dp"
+                android:layout_height="40sp"
+                android:layout_marginLeft="20sp"
+                android:background="@drawable/chocolate_outline"
+                android:spinnerMode="dropdown" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Keterangan:"
+                android:textColor="@color/sawit"
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            >
+
+            <EditText
+                android:layout_width="299dp"
+                android:layout_height="100dp"
+                android:width="100dp"
+                android:background="@drawable/chocolate_outline"
+
+                android:textColorHint="@color/sawit"
+                android:textSize="10sp" />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="74dp"
+        android:background="@drawable/loginbtn"
+        android:fontFamily="sans-serif-medium"
+        android:text="Next"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/lgnBtn"
+        />
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
