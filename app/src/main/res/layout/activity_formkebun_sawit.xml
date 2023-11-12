@@ -138,11 +138,23 @@
         android:layout_height="74dp"
         android:background="@drawable/loginbtn"
         android:fontFamily="sans-serif-medium"
-        android:text="Next"
+        android:text="Submit"
         android:layout_below="@+id/linearLayout"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="20dp"
-        android:id="@+id/lgnBtn"
+        android:id="@+id/submitbtn"
+        />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="74dp"
+        android:background="@drawable/loginbtn"
+        android:fontFamily="sans-serif-medium"
+        android:text="Received"
+        android:layout_below="@+id/submitbtn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/receivedbtn"
         />
 
 
